@@ -1,0 +1,142 @@
+/*----- Basic Setup -----*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*----- Page 1 - styling -----*/
+.main-content{
+    width: 910px;
+    margin: 35px auto;
+    box-shadow: 0 0 5px 5px #cccccc;
+}
+
+.main-content h1 {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.columns {
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+}
+
+.columns h2 {
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.columns:nth-child(3) {
+    background-color: #2F4F4F;
+    color: #fff;
+}
+
+.column-price-1 {
+    background-color: #5BB189;
+    padding: 15px 0;
+}
+
+.column-price-2 {
+    background-color: #4B0082;
+    padding: 15px 0;
+}
+
+.column-price-3 {
+    background-color: #EC632A;
+    padding: 15px 0;
+}
+
+.price-bold {
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.detail-bold {
+    font-weight: 800;
+}
+
+.columns ul li {
+    list-style: none;
+    padding: 15px 0;
+}
+
+li:nth-child(2), li:nth-child(4){
+    background: rgba(47, 59, 64, 0.35);
+}
+
+.standard-column li:nth-child(2), .standard-column li:nth-child(4) {
+    background: rgba(182, 182, 182, 0.35);
+}
+
+.columns ul li:nth-child(5) {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.column-view-form a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px #979797;
+}
+
+.standard-column a {
+    box-shadow: 2px 2px 2px #2b2b2b;
+}
+
+.btn {
+    padding: 15px 100px;
+    background-color: #3A6BA5;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #437CBF;
+}
+
+.confidence {
+    background-color: #2F4F4F;
+    margin: 50px auto;
+    width: 910px;
+    color: #fff;
+}
+
+.confidence-content {
+    padding: 35px 0 25px 25px;
+}
+
+.confidence h1 {
+    text-align: left;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.confidence p {
+    font-weight: 300;
+    font: 18px;
+}
+
+.confidence li:nth-child(2) {
+    background: rgba(182, 182, 182, 0);
+}
+
+.confidence li {
+    font-size: 18px;
+    font-weight: 300;
+    list-style: none;
+    text-indent: 25px;
+    padding: 20px 0 0 0;
+}
+
+.confidence li a {
+    color: #3A6BA5;
+}
