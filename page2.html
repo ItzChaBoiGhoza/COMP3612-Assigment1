@@ -1,11 +1,66 @@
 <!DOCTYPE html>
-<html lang="us">
-    <head>
-        <meta charset="UTF-8">
-        <title>COMP 3612 - Assignment 1</title>
-        <link rel="stylesheet" href="res/css/styles.css">
-    </head>
-    <body>
-        
-    </body>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Page 2</title>
+   <link rel="stylesheet" href="/Assignments/COMP3612-Assigment1/res/css/variables-palette-7.css">
+   <link rel="stylesheet" href="/Assignments/COMP3612-Assigment1/res/css/page2styles.css" />
+</head>
+<body>
+<form  action="https://www.randyconnolly.com/tests/process.php" method="POST">
+    <fieldset>
+       <legend>Advanced Art Work Search</legend>
+
+        <div id="searchBox">
+            <input type="text" placeholder="Search" name="search">
+            <label for="">Subject:</label>
+
+            <input type="radio" value="History" name="subject">
+            <label for="">History</label>
+
+            <input type="radio" value="Persons" name="subject">
+            <label for="">Persons</label>
+
+            <input type="radio" value="Landscape" name="subject">
+            <label for="">Landscape</label>
+
+            <select name="filter" id="">
+                <option value="0">Baroque</option>
+                <option value="1">Renaissance</option>
+                <option value="2">Realism</option>
+            </select>
+        </div>   
+        <div id="paintingBox">
+            <h3>Paintings</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Title</th>
+                        <th>Artist</th>
+                        <th>Year</th>
+                        <th>Genre</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td class="first-column">
+                        <input type="checkbox">
+                        <img src="/Assignments/COMP3612-Assigment1/res/img/125010.jpg" alt="">
+                    </td>
+                    <td>Portrait of Alvida Christina Assink</td>
+                    <td>Kruseman, Jan</td>
+                    <td>1833</td>
+                    <td>Realism</td>
+                    <td>
+                        <button><img src="/Assignments/COMP3612-Assigment1/res/img/edit.png" alt=""></button>
+                        <button><img src="/Assignments/COMP3612-Assigment1/res/img/collection.png" alt=""></button>
+                        <button><img src="/Assignments/COMP3612-Assigment1/res/img/delete.png" alt=""></button>
+                    </td>
+                </tbody>
+            </table>
+        </div> 
+    </fieldset>  
+</form>
+</body>
 </html>

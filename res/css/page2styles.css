@@ -1,0 +1,17 @@
+legend {
+    background-color: var(--color-support-1-900);
+    color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+fieldset {
+    background-color: var(--color-neutral-200);
+    color: #fff;
+    width: 90%;
+    margin: 0 auto;
+}
