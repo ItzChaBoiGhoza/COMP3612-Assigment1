@@ -8,59 +8,130 @@
 </head>
 <body>
 <form  action="https://www.randyconnolly.com/tests/process.php" method="POST">
-    <fieldset>
-       <legend>Advanced Art Work Search</legend>
+    <legend>Advanced Art Work Search</legend>
 
-        <div id="searchBox">
-            <input type="text" placeholder="Search" name="search">
-            <label for="">Subject:</label>
+    <div id="searchBox">
+        <input type="text" placeholder="Search" name="search">
+        <label for="">Subject:</label>
 
-            <input type="radio" value="History" name="subject">
-            <label for="">History</label>
+        <input type="radio" value="History" name="subject">
+        <label for="">History</label>
 
-            <input type="radio" value="Persons" name="subject">
-            <label for="">Persons</label>
+        <input type="radio" value="Persons" name="subject">
+        <label for="">Persons</label>
 
-            <input type="radio" value="Landscape" name="subject">
-            <label for="">Landscape</label>
+        <input type="radio" value="Landscape" name="subject">
+        <label for="">Landscape</label>
 
-            <select name="filter" id="">
-                <option value="0">Baroque</option>
-                <option value="1">Renaissance</option>
-                <option value="2">Realism</option>
-            </select>
-        </div>   
-        <div id="paintingBox">
-            <h3>Paintings</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Title</th>
-                        <th>Artist</th>
-                        <th>Year</th>
-                        <th>Genre</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
+        <select name="filter" id="">
+            <option value="0">Select Genre</option>
+            <option value="1">Baroque</option>
+            <option value="2">Renaissance</option>
+            <option value="3">Realism</option>
+        </select>
+    </div>   
+    <div id="paintingBox">
+        <h3 id="paintingtitle">Paintings</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Title</th>
+                    <th>Artist</th>
+                    <th>Year</th>
+                    <th>Genre</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-row">
                     <td class="first-column">
-                        <input type="checkbox">
+                        <input type="checkbox" value="10" name="index[]">
                         <img src="/Assignments/COMP3612-Assigment1/res/img/125010.jpg" alt="">
                     </td>
-                    <td>Portrait of Alvida Christina Assink</td>
+                    <td><em>Portrait of Alvida Christina Assink</em></td>
                     <td>Kruseman, Jan</td>
                     <td>1833</td>
                     <td>Realism</td>
-                    <td>
-                        <button><img src="/Assignments/COMP3612-Assigment1/res/img/edit.png" alt=""></button>
-                        <button><img src="/Assignments/COMP3612-Assigment1/res/img/collection.png" alt=""></button>
-                        <button><img src="/Assignments/COMP3612-Assigment1/res/img/delete.png" alt=""></button>
+                    <td class="actionAttributes">
+                        <button class="btn first"><img src="/Assignments/COMP3612-Assigment1/res/img/edit.png" alt=""></button>
+                        <button class="btn"><img src="/Assignments/COMP3612-Assigment1/res/img/archive.png" alt=""></button>
+                        <button class="btn"><img src="/Assignments/COMP3612-Assigment1/res/img/delete.png" alt=""></button>
                     </td>
-                </tbody>
-            </table>
-        </div> 
-    </fieldset>  
+                </tr>
+                <tr class="table-row">
+                    <td class="first-column">
+                        <input type="checkbox" value="20" name="index[]">
+                        <img src="/Assignments/COMP3612-Assigment1/res/img/125020.jpg" alt="">
+                    </td>
+                    <td><em>Portrait of Wiliam II, King of Netherlands</em></td>
+                    <td>Kruseman, Jan</td>
+                    <td>1839</td>
+                    <td>Realism</td>
+                    <td class="actionAttributes">
+                        <button class="btn first"><img src="/Assignments/COMP3612-Assigment1/res/img/edit.png" alt=""></button>
+                        <button class="btn"><img src="/Assignments/COMP3612-Assigment1/res/img/archive.png" alt=""></button>
+                        <button class="btn"><img src="/Assignments/COMP3612-Assigment1/res/img/delete.png" alt=""></button>
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td class="first-column">
+                        <input type="checkbox" value="30" name="index[]">
+                        <img src="/Assignments/COMP3612-Assigment1/res/img/130020.jpg" alt="">
+                    </td>
+                    <td><em>Three girls from the Amsterdam Orphanage</em></td>
+                    <td>Schwaitze, Therese</td>
+                    <td>1885</td>
+                    <td>Realism</td>
+                    <td class="actionAttributes">
+                        <button class="btn first"><img src="/Assignments/COMP3612-Assigment1/res/img/edit.png" alt=""></button>
+                        <button class="btn"><img src="/Assignments/COMP3612-Assigment1/res/img/archive.png" alt=""></button>
+                        <button class="btn"><img src="/Assignments/COMP3612-Assigment1/res/img/delete.png" alt=""></button>
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td class="first-column">
+                        <input type="checkbox" value="40" name="index[]">
+                        <img src="/Assignments/COMP3612-Assigment1/res/img/127010.jpg" alt="">
+                    </td>
+                    <td><em>The windmill at Wikj bij Duurstede</em></td>
+                    <td>Ruisdael, Jacob van</td>
+                    <td>1870</td>
+                    <td>Dutch Golden Age</td>
+                    <td class="actionAttributes">
+                        <button class="btn first"><img src="/Assignments/COMP3612-Assigment1/res/img/edit.png" alt=""></button>
+                        <button class="btn"><img src="/Assignments/COMP3612-Assigment1/res/img/archive.png" alt=""></button>
+                        <button class="btn"><img src="/Assignments/COMP3612-Assigment1/res/img/delete.png" alt=""></button>
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td class="first-column">
+                        <input type="checkbox" value="50" name="index[]">
+                        <img src="/Assignments/COMP3612-Assigment1/res/img/128010.jpg" alt="">
+                    </td>
+                    <td><em>Morning Ride Along th Beach</em></td>
+                    <td>Mauve, Anton</td>
+                    <td>1871</td>
+                    <td>Realism</td>
+                    <td class="actionAttributes">
+                        <button class="btn first"><img src="/Assignments/COMP3612-Assigment1/res/img/edit.png" alt=""></button>
+                        <button class="btn"><img src="/Assignments/COMP3612-Assigment1/res/img/archive.png" alt=""></button>
+                        <button class="btn"><img src="/Assignments/COMP3612-Assigment1/res/img/delete.png" alt=""></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <div>
+            <select name="actions" id="">
+                <option value="0">Select Action</option>
+                <option value="1">Edit</option>
+                <option value="2">Collection</option>
+                <option value="3">Delete</option>
+            </select>
+            <input type="submit" value="Apply to All" class="apply-btn">
+        </div>
+    </div> 
 </form>
 </body>
 </html>
